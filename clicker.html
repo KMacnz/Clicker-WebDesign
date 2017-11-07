@@ -22,9 +22,16 @@
        <h2 align="center">Try To Win!!!</h2>
        <section>
        <script>
-       java goes here
+       var total = 0;
+       function clicker(){
+         total = total + 1;
+         document.getElementById("counter").innerHTML = total;
+       }
        </script>
-       <button onclick=""></button>
+       <button onclick="clicker()">Click Me</button>
+       <p id = "counter"></p>
      </section>
   </body>
 </html>
+<Version 1: Web Design and CSS Code Sorted
+Version 2: Button and>
