@@ -23,12 +23,14 @@
        <section>
        <script>
        var total = 0;
+       var multiplyier = 1;
        function clicker(){
-         total = total + 1;
+         total = total + (1 * multiplyier);
          document.getElementById("counter").innerHTML = total;
        }
        </script>
        <button onclick="clicker()">Click Me</button>
+       <button onclick="bonus()">Go Faster</button>
        <p id = "counter">0</p>
      </section>
   </body>
