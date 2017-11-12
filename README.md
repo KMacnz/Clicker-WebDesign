@@ -16,22 +16,24 @@
   <body style="background-color:#80C2AF">
     <div class='whiteContainer'>
       <div class="container">
-        <a href="clicker.html">Home</a>
+        <a href="clicker.html">Reset</a>
         </div>
         <h1 align="center">Cookie Clicker</h1>
        <h2 align="center">Try To Win!!!</h2>
        <section>
        <script>
        var total = 0;
+       var multiplyier = 1;
        function clicker(){
-         total = total + 1;
+         total = total + (1 * multiplyier);
          document.getElementById("counter").innerHTML = total;
        }
        </script>
        <button onclick="clicker()">Click Me</button>
-       <p id = "counter"></p>
+       <button onclick="bonus()">Go Faster</button>
+       <p id = "counter">0</p>
      </section>
   </body>
 </html>
 <Version 1: Web Design and CSS Code Sorted
-Version 2: Button and>
+Version 2: Button and Values of Clicks>
