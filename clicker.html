@@ -23,17 +23,38 @@
        <section>
        <script>
        var total = 0;
-       var multiplyier = 1;
-       function clicker(){
-         total = total + (1 * multiplyier);
-         document.getElementById("counter").innerHTML = total;
+
+       var multipler = 1;
+
+       function clicker() {
+           total = total + multipler;
+           document.getElementById("counter").innerHTML = total;
+
+           if(total > 9) {
+              document.getElementById("bonusButton").disabled = false;
+           }
        }
-       </script>
-       <button onclick="clicker()">Click Me</button>
-       <button onclick="bonus()">Go Faster</button>
-       <p id = "counter">0</p>
+       function bonus() {
+           multipler = multipler + 1;
+           total = total - 10;
+
+           document.getElementById("counter").innerHTML = total;
+
+           if(total < 10) {
+               document.getElementById("bonusButton").disabled=true;
+           }
+       }
+   </script>
+
+   <button id="clickButton" onclick="clicker()">Click Me!</button>
+
+   <button id="bonusButton" onclick="bonus()" disabled=true>Go faster</button>
+
+   <p id="counter"></p>
+
      </section>
   </body>
 </html>
 <Version 1: Web Design and CSS Code Sorted
-Version 2: Button and Values of Clicks>
+Version 2: Button and Values of Clicks
+Version 3: Another Button Added and More Values>
