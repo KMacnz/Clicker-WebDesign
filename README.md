@@ -48,7 +48,7 @@
        }
    </script>
    <!-- these are the buttons that you click for the game -->
-   <button id="clickButton" onclick="clicker()"><img width="250" src="https://cdn1.pri.org/sites/default/files/story/images/cookies733.jpg"></button>
+   <button id="clickButton" onclick="clicker()"><img width="250" src="https://eleventhstack.files.wordpress.com/2013/06/chocolate_chip_cookies.jpg"></button>
    <!-- these are the buttons that you click for the game this one is disable unless you have more than ten points-->
    <button id="bonusButton" onclick="bonus()" disabled=true>Go faster</button>
 
