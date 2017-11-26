@@ -19,12 +19,13 @@
         <a href="clicker.html">Reset</a>
         </div>
         <h1 align="center">Cookie Clicker</h1>
-       <h2 align="center">Try To Win!!!</h2>
+       <h2 align="center" id = name></h2>
        <section>
       <!-- My Java Script Code is between the script section -->
        <script>
        var person = prompt("Please enter your name", "Name");
        alert('Hello ' + person + ' Lets Play Cookie Clicker!!!')
+       document.getElementById("name").innerHTML = person + ' Try To Win!!!'
          <!-- tells you that you are making a new variable and you saving items in it -->
        var total = 0;
        var multipler = 1;
@@ -55,7 +56,6 @@
    <button id="bonusButton" onclick="bonus()" disabled=true>Go faster</button>
 
    <p id="counter"></p>
-
      </section>
   </body>
 </html>
@@ -64,5 +64,6 @@ Version 1: Web Design and CSS Code Sorted
 Version 2: Button and Values of Clicks
 Version 3: Another Button Added and More Values
 Version 4: Add Images and Comments
-Version 5: Alerts 
+Version 5: Alerts
+Version 6: Getting The Alerts To Connect To My HTML
 -->
