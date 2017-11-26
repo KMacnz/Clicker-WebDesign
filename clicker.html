@@ -68,5 +68,5 @@ Version 2: Button and Values of Clicks
 Version 3: Another Button Added and More Values
 Version 4: Add Images and Comments
 Version 5: Alerts
-Version 6: Getting The Alerts To Connect To My HTML
+Version 6: Getting The Alerts To Connect To My HTML & Fixing Bugs
 -->
