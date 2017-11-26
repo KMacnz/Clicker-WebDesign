@@ -23,7 +23,10 @@
        <section>
       <!-- My Java Script Code is between the script section -->
        <script>
-       var person = prompt("Please enter your name", "Name");
+var person = null;
+       while (person == null){
+       person = prompt("Please enter your name", "Name");
+     }
        alert('Hello ' + person + ' Lets Play Cookie Clicker!!!')
        document.getElementById("name").innerHTML = person + ' Try To Win!!!'
          <!-- tells you that you are making a new variable and you saving items in it -->
